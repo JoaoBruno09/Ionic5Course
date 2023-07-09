@@ -1,0 +1,11 @@
+{
+  "name": "CursoIonic5",
+  "integrations": {
+    "capacitor": {
+      "enabled": false
+    },
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "e597e9e3"
+}

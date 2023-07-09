@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Segment</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-segment value="Frutas" (ionChange)="selecionar($event)">
+    <ion-segment-button value="Frutas">
+      <ion-label>Frutas</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="Cores">
+      <ion-label>Cores</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+  <!-- Só aparce se a opção selecionada for frutas-->
+  <ion-list *ngIf="opcaoSelecionada == 'Frutas'">
+    <ion-item>Maça</ion-item>
+    <ion-item>Uva</ion-item>
+    <ion-item>Banana</ion-item>
+    <ion-item>Abacate</ion-item>
+  </ion-list>
+  <!-- Só aparce se a opção selecionada for cores-->
+  <ion-list *ngIf="opcaoSelecionada == 'Cores'">
+    <ion-item>Azul</ion-item>
+    <ion-item>Verde</ion-item>
+    <ion-item>Amarelo</ion-item>
+    <ion-item>Roxo</ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>ProgressBar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Default Progressbar -->
+  <br>
+  <h1>Processando 10%</h1>
+  <ion-progress-bar value="0.1"></ion-progress-bar>
+
+  <!-- Default Progressbar with 50 percent -->
+  <br>
+  <h1>Processando 50%</h1>
+  <ion-progress-bar value="0.5"></ion-progress-bar>
+
+  <!-- Colorize Progressbar -->
+  <br>
+  <h1>Processando 80%</h1>
+  <ion-progress-bar color="danger" value="0.8"></ion-progress-bar>
+  <br>
+  <ion-progress-bar color="secondary" value="0.8"></ion-progress-bar>
+
+  <!-- Other types -->
+  <br>
+  <h1>Processando 25% de um total de 50%</h1>
+  <ion-progress-bar value="0.25" buffer="0.5"></ion-progress-bar>
+  <br>
+  <h1>Processando Indeterminado</h1>
+  <ion-progress-bar type="indeterminate"></ion-progress-bar>
+  <br>
+  <h1>Processando Indeterminado Reverso</h1>
+  <ion-progress-bar type="indeterminate" reversed="true"></ion-progress-bar>
+</ion-content>

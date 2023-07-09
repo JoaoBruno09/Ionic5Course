@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Componentes Nativos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-button (click)="showPage('camera')" expand="block">
+    Camera
+  </ion-button>
+  <ion-button (click)="showPage('texttospeech')" expand="block">
+    Text to Speech
+  </ion-button>
+  <ion-button (click)="showPage('zoom')" expand="block">
+    Zoom
+  </ion-button>
+</ion-content>

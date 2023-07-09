@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Input</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-input></ion-input>
+  <!-- Default Input -->
+  <ion-input></ion-input>
+
+  <!-- Input with value -->
+  <ion-input value="100dadadasda"></ion-input>
+
+  <!-- Input with placeholder -->
+  <ion-input placeholder="Informe seu nome"></ion-input>
+
+  <!-- Input with clear button when there is a value -->
+  <ion-input clearInput value="clear me"></ion-input>
+
+  <!-- Number type input -->
+  <ion-input type="number" value="333"></ion-input>
+
+  <!-- Email type input -->
+  <ion-input type="email"  placeholder="Informe seu email"></ion-input>
+
+  <!-- Phone type input -->
+  <ion-input type="tel"  placeholder="Informe seu telemovel"></ion-input>
+
+  <!-- Url type input -->
+  <ion-input type="url"  placeholder="Informe url"></ion-input>
+
+  <!-- Search type input -->
+  <ion-input type="search"  placeholder="Pesquisar"></ion-input>
+
+  <!-- Password type input -->
+  <ion-input type="password"  placeholder="Palavra-passe"></ion-input>
+
+  <!-- Disabled input -->
+  <ion-input value="Disabled" disabled></ion-input>
+
+  <!-- Readonly input -->
+  <ion-input value="Readonly" readonly></ion-input>
+
+  <!-- Inputs with labels -->
+  <ion-item>
+    <ion-label>Nome:</ion-label>
+    <ion-input type="text" placeholder="Informe o seu primeiro nome"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Floating Label</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="fixed">Fixed Label</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Informe a nota</ion-label>
+    <ion-input type="text" placeholder="Digite de 1 a 5"></ion-input>
+  </ion-item>
+
+   <!-- Input com cor -->
+   <ion-input color="danger" type="text" placeholder="Informe o seu nome"></ion-input>
+
+</ion-content>

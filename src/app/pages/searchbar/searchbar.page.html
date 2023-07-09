@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>SearchBar</ion-title>
+  </ion-toolbar>
+  <ion-toolbar color="secondary">
+    <ion-searchbar color="light" [(ngModel)]="nome" (keyup)="filtrarItens($event)"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let pessoa of pessoasFiltradas">
+      <ion-label>{{pessoa.nome}}</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <h3>Tipos de SearchBar</h3>
+  <!-- Searchbar with danger color -->
+  <ion-searchbar color="danger"></ion-searchbar>
+
+  <!-- Searchbar with value -->
+  <ion-searchbar value="Ionic"></ion-searchbar>
+
+  <!-- Searchbar with telephone type -->
+  <ion-searchbar type="tel"></ion-searchbar>
+
+  <!-- Searchbar disabled -->
+  <ion-searchbar disabled="true"></ion-searchbar>
+
+  <!-- Searchbar with a cancel button and custom cancel button text -->
+  <ion-searchbar showCancelButton cancelButtonText="Cancelar Operação"></ion-searchbar>
+
+  <!-- Animated Searchbar -->
+  <ion-searchbar animated placeholder="Pesquisar"></ion-searchbar>
+
+  <!-- Design modo android -->
+  <ion-searchbar mode="md"></ion-searchbar>
+
+  <!-- Design modo ios -->
+  <ion-searchbar mode="ios"></ion-searchbar>
+</ion-content>

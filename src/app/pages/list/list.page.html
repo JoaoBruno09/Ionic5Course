@@ -1,0 +1,95 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>List</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h3>Lista com Texto</h3>
+  <ion-list>
+    <ion-item>
+      <ion-label>Pokémon Yellow</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Mega Man X</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>The Legend of Zelda</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Pac-Man</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Super Mario World</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <h3>Lista Form</h3>
+  <ion-list>
+    <ion-item>
+      <ion-label>Input</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Toggle</ion-label>
+      <ion-toggle slot="end"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label>Radio</ion-label>
+      <ion-radio slot="end"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Checkbox</ion-label>
+      <ion-checkbox slot="start"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png">
+      </ion-avatar>
+      <ion-label>
+        <h2>João Rocha</h2>
+        <h3>Curso Ionic5</h3>
+        <p>Fundador do site https://jbr-projects.pt/</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <!-- List of Sliding Items -->
+  <ion-list>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-label>Opção Direita</ion-label>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option>Não lido</ion-item-option>
+        <ion-item-option color="danger">Excluir</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+    <ion-item>
+      <ion-label>Sem opção</ion-label>
+    </ion-item>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-label>Opção Esquerda</ion-label>
+      </ion-item>
+      <ion-item-options side="start">
+        <ion-item-option>Não Lido</ion-item-option>
+        <ion-item-option color="danger">Excluir</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+  <h3>Lista com Array</h3>
+  <ion-list>
+    <ion-item *ngFor="let fruta of frutas">
+      <ion-label>{{fruta}}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

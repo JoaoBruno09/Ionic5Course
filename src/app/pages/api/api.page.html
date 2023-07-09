@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Api Externa</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="stacked">Informe seu cep</ion-label>
+    <ion-input type="text" [(ngModel)]="cep"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-button (click)="consultarCep()" expand="block">Consultar CEP
+    </ion-button>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Cep</ion-label>
+    <p>{{endereco.cep}}</p>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Logradouro</ion-label>
+    <p>{{endereco.logradouro}}</p>
+  </ion-item>
+
+  <ion-button (click)="get()" expand="block" fill="clear" shape="round">
+    Receber Dados do Servidor
+  </ion-button>
+  <ion-button (click)="post()" expand="block" fill="clear" shape="round">
+    Enviar dados para o servidor
+  </ion-button>
+  <ion-button (click)="put()" expand="block" fill="clear" shape="round">
+    Atualiza dados no servidor
+  </ion-button>
+  <ion-button (click)="delete()" expand="block" fill="clear" shape="round">
+    Excluir dados no servidor
+  </ion-button>
+
+  {{result}}
+</ion-content>
