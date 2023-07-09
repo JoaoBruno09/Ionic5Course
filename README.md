@@ -18,7 +18,7 @@ To get started with the projects in this repository, follow these steps:
 1. Clone the repository to your local machine using the following command:
 
    ```bash
-   git clone https://github.com/JoaoBruno09/CursoIonic5.git
+   git clone https://github.com/JoaoBruno09/Ionic5Course
    ```
 
 2. Install the necessary dependencies by running the following command within the project's root directory:
